@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 10rem;
+}
+body form {
+  display: flex;
+  gap: 3rem;
+  margin: 2rem;
+}
+body button {
+  margin: 4rem;
+  border-radius: 30px;
+  padding: 1rem;
+  border: 1px solid green;
+  color: blueviolet;
+}/*# sourceMappingURL=index.css.map */
