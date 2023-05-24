@@ -2014,15 +2014,9 @@ const countries = [
 
 //   console.log(countries);
 const container = document.querySelector(".card-container");
-// let card = document.querySelector('.card');
-// let countryflag = document.querySelector('.flag');
-// let countryName = document.querySelector('.name');
-// let countrylanguages = document.querySelector('.languages');
-// let countrypopulation = document.querySelector('.population');
 
 countries.forEach((country) => {
   console.log(country.name);
-
 
   let Card = document.createElement("section");
   Card.classList.add("card");
@@ -2032,27 +2026,29 @@ countries.forEach((country) => {
   CountryName.textContent = country.name;
   Card.appendChild(CountryName);
 
-
   let countryLang = document.createElement("p");
-  countryLang.classList.add("tag");
+  countryLang.classList.add("label");
   countryLang.innerHTML =
     "<b>Country's Languages:</b>" + " " + country.languages;
   Card.append(countryLang);
 
   let countryPopulation = document.createElement("p");
   countryPopulation.innerHTML =
-    "Country's Population :" + " " + country.population;
+    "<b>Country's Population :</b>" + " " + country.population;
+  countryPopulation.classList.add("label");
+
   Card.appendChild(countryPopulation);
-  countryPopulation.classList.add("tag");
 
   let countrycurrency = document.createElement("p");
-  countrycurrency.innerHTML = "Country's currency :" + " " + country.currency;
+  countrycurrency.innerHTML =
+    "<b>Country's currency :</b>" + " " + country.currency;
+  countrycurrency.classList.add("label");
+
   Card.append(countrycurrency);
-  countrycurrency.classList.add("tag");
 
   let countrycapital = document.createElement("p");
   countrycapital.innerHTML =
     "<b>Country's capital :</b>" + " " + country.capital;
   Card.appendChild(countrycapital);
-  countrycapital.classList.add("tag");
+  countrycapital.classList.add("label");
 });

@@ -35,7 +35,7 @@ body {
   margin-left: 15px;
   justify-content: center;
 }
-.card-container .card .tag {
+.card-container .card .label {
   color: #000;
   background-color: #e3d9d9;
   border-radius: 10px;
