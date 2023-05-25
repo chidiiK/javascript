@@ -2016,7 +2016,7 @@ const countries = [
 const container = document.querySelector(".card-container");
 
 countries.forEach((country) => {
-  console.log(country.name);
+  console.log(country.name); 
 
   let Card = document.createElement("section");
   Card.classList.add("card");
